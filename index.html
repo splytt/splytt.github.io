@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>R6 Siege Accounts Marketplace</title>
+  <meta charset="UTF-8" />
+  <title>R6 Siege Marketplace (Main)</title>
   <style>
     body {
       margin: 0;
@@ -10,92 +10,132 @@
       color: #e0e0e0;
       font-family: 'Segoe UI', sans-serif;
     }
-
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       background-color: #1a1a1a;
       padding: 20px 40px;
       border-bottom: 2px solid #8000ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
     }
-
     header h1 {
-      color: #a64dff;
-      font-size: 2rem;
       margin: 0;
+      font-size: 2rem;
+      color: #a64dff;
+      flex-grow: 1;
+      text-align: center;
     }
-
-    header a button {
+    .contact-button {
       background-color: #8000ff;
-      color: white;
       border: none;
+      color: white;
       padding: 10px 20px;
       border-radius: 8px;
+      font-weight: bold;
       font-size: 1rem;
       cursor: pointer;
       transition: background-color 0.2s ease;
+      flex-shrink: 0;
+      text-decoration: none;
+      display: inline-block;
     }
-
-    header a button:hover {
+    .contact-button:hover {
       background-color: #a64dff;
     }
-
     .container {
-      padding: 40px 20px;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       gap: 20px;
-      max-width: 800px;
-      margin: auto;
+      padding: 40px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-
-    .account {
+    .card {
       background-color: #1a1a1a;
-      border-left: 5px solid #8000ff;
-      padding: 16px 20px;
-      border-radius: 8px;
+      border: 2px solid #8000ff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 0 15px #8000ff44;
       transition: background-color 0.2s ease;
     }
-
-    .account a {
-      color: #ffffff;
+    .card:hover {
+      background-color: #2a2a2a;
+    }
+    .card a {
       text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
       font-size: 1.1rem;
     }
-
-    .account:hover {
-      background-color: #2a2a2a;
+    .price {
+      margin-top: 10px;
+      color: #a64dff;
+    }
+    .full-market-button {
+      text-align: center;
+      margin: 40px 0 80px;
+    }
+    .full-market-button button {
+      background-color: #8000ff;
+      color: white;
+      border: none;
+      padding: 12px 36px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .full-market-button button:hover {
+      background-color: #a64dff;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🛒 R6 Siege Accounts</h1>
-    <a href="https://splytt.github.io/contactbruzz.html">
-      <button>Contact</button>
-    </a>
+    <h1>🛒 Siege Marketplace</h1>
+    <a href="https://splytt.github.io/contactbruzz.html" class="contact-button">Contact</a>
   </header>
 
   <div class="container">
-    <div class="account">
+
+    <div class="card">
       <a href="https://skins.tahirfan.club/profile/8f9b9692-376f-4919-b156-ddb6666e0682" target="_blank">
-        5x Champ | 40/40 | Banned
+        5x Champ | 40/40 | Banned | PC
       </a>
+      <div class="price">$3</div>
     </div>
 
-    <div class="account">
-      <a href="https://skins.tahirfan.club/profile/ce4a5191-dfa1-4da7-83b1-f49b152ddf62" target="_blank">
-        Champ | PC | Unbanned
+    <div class="card">
+      <a href="https://skins.tahirfan.club/profile/63ef0851-c075-45c2-9c61-2d9e31958057" target="_blank">
+        Diamond | PC Only
       </a>
+      <div class="price">$6</div>
     </div>
 
-    <div class="account">
-      <a href="https://skins.tahirfan.club/profile/3e681309-2161-44d2-9b33-8fc72199b68b" target="_blank">
-        Champ | PC | Not Banned
+    <div class="card">
+      <a href="https://skins.tahirfan.club/profile/c0d853d1-847c-4a55-be75-e7a3a8449b07" target="_blank">
+        Obsidian | PC Only | Unbanned
       </a>
+      <div class="price">$5</div>
     </div>
+
+    <div class="card">
+      <a href="https://skins.tahirfan.club/profile/bef1fc58-1254-4958-808c-b2169de4a44e" target="_blank">
+        Obsidian | PC
+      </a>
+      <div class="price">$3</div>
+    </div>
+
+  </div>
+
+  <div class="full-market-button">
+    <button onclick="window.location.href='https://splytt.github.io/market.html'">
+      Full Market →
+    </button>
   </div>
 
 </body>
