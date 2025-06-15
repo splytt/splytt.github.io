@@ -1,17 +1,56 @@
-<div style="text-align: center; margin-top: 40px;">
-  <h1 style="color: #a64dff; font-size: 2.5rem; margin-bottom: 20px;">Contact Us</h1>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-<div style="display: flex; justify-content: center; margin-bottom: 60px;">
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSc0-Gr-QeCOwHZo8StSTq6OZn65Wt80rO6h3HiOmmQ0KWgz6w/viewform?usp=sf_link" 
-    width="900" 
-    height="1440" 
-    frameborder="0" 
-    marginheight="0" 
-    marginwidth="0"
-    style="border: none;">
-    Loading…
-  </iframe>
-</div>
+    header {
+      background-color: #1a1a1a;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #8000ff;
+    }
 
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #a64dff;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px 80px;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #8000ff55;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <div class="form-container">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSc0-Gr-QeCOwHZo8StSTq6OZn65Wt80rO6h3HiOmmQ0KWgz6w/viewform?usp=sf_link" 
+      width="900" 
+      height="1440">
+      Loading…
+    </iframe>
+  </div>
+
+</body>
+</html>
