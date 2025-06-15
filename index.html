@@ -91,6 +91,56 @@
     .full-market-button button:hover {
       background-color: #a64dff;
     }
+    /* Happy Customers Section */
+    .happy-customers {
+      background-color: #1a1a1a;
+      border-top: 2px solid #8000ff;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto 40px auto;
+      text-align: center;
+      color: #a64dff;
+    }
+    .happy-customers h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #a64dff;
+    }
+    .customer-list {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    .customer {
+      background-color: #0d0d0d;
+      border: 2px solid #8000ff;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 0 15px #8000ff88;
+      text-align: center;
+      color: #e0e0e0;
+    }
+    .customer img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #a64dff;
+    }
+    .customer .name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #a64dff;
+    }
+    .customer .quote {
+      font-style: italic;
+      font-size: 1rem;
+      color: #ddd;
+    }
   </style>
 </head>
 <body>
@@ -137,6 +187,22 @@
       Full Market →
     </button>
   </div>
+
+  <section class="happy-customers">
+    <h2>Happy Customers</h2>
+    <div class="customer-list">
+      <div class="customer">
+        <img src="https://i.imgur.com/0pC5N37.jpg" alt="Alex B." />
+        <div class="name">Alex B.</div>
+        <div class="quote">man fuck this shit i hope you sell nothing</div>
+      </div>
+      <div class="customer">
+        <img src="https://i.imgur.com/pSfsXKd.jpg" alt="Tezo T." />
+        <div class="name">Tezo T.</div>
+        <div class="quote">10/10</div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
